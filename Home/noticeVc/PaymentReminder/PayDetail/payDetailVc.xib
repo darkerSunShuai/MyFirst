@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="payDetailVc">
+            <connections>
+                <outlet property="imgHeght" destination="kcv-62-lfy" id="O9f-hg-gjo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payDetail.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iaf-3a-Wfc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="211" id="kcv-62-lfy"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgR-3V-3wh">
+                    <rect key="frame" x="0.0" y="219" width="375" height="448"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.06.31 初一年部 校服费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-u7-RAQ">
+                            <rect key="frame" x="0.0" y="43" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="dhr-ac-Q0C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg5-dk-cNd">
+                            <rect key="frame" x="8" y="89" width="359" height="220"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh4-ju-4n2">
+                                    <rect key="frame" x="59" y="8" width="240" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INO-VD-7Fi">
+                                            <rect key="frame" x="127" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缴费时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQp-Xa-3zQ">
+                                            <rect key="frame" x="30" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="A34-JL-es3"/>
+                                        <constraint firstAttribute="height" constant="21" id="hv6-A3-jS6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uj-Ol-qOQ">
+                                    <rect key="frame" x="60" y="49" width="240" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3G-ey-sgh">
+                                            <rect key="frame" x="127" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缴费时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-MR-ecQ">
+                                            <rect key="frame" x="30" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="WAw-7v-jq1"/>
+                                        <constraint firstAttribute="height" constant="21" id="lJW-qF-qUG"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-HI-ss0">
+                                    <rect key="frame" x="60" y="90" width="240" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muP-eB-Btv">
+                                            <rect key="frame" x="127" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缴费时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-bX-z65">
+                                            <rect key="frame" x="30" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="NfU-ve-9eF"/>
+                                        <constraint firstAttribute="height" constant="21" id="pb7-Rs-aXw"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpo-qd-LO3">
+                                    <rect key="frame" x="59" y="131" width="240" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-dG-J2k">
+                                            <rect key="frame" x="127" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缴费时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zx-pe-HTH">
+                                            <rect key="frame" x="30" y="0.0" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="Wfi-9G-8fn"/>
+                                        <constraint firstAttribute="width" constant="240" id="gfw-aR-8eR"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TlY-HI-ss0" firstAttribute="centerX" secondItem="eg5-dk-cNd" secondAttribute="centerX" id="BXl-Pg-iq7"/>
+                                <constraint firstAttribute="height" constant="220" id="ER2-jU-WgF"/>
+                                <constraint firstItem="5uj-Ol-qOQ" firstAttribute="top" secondItem="Gh4-ju-4n2" secondAttribute="bottom" constant="20" id="QGq-nQ-nQA"/>
+                                <constraint firstItem="Gh4-ju-4n2" firstAttribute="top" secondItem="eg5-dk-cNd" secondAttribute="top" constant="8" id="WoO-Go-sDy"/>
+                                <constraint firstItem="Dpo-qd-LO3" firstAttribute="top" secondItem="TlY-HI-ss0" secondAttribute="bottom" constant="20" id="gHc-bN-PX1"/>
+                                <constraint firstItem="Gh4-ju-4n2" firstAttribute="centerX" secondItem="eg5-dk-cNd" secondAttribute="centerX" id="j9j-rw-IOX"/>
+                                <constraint firstItem="5uj-Ol-qOQ" firstAttribute="centerX" secondItem="eg5-dk-cNd" secondAttribute="centerX" id="t6b-TO-hVO"/>
+                                <constraint firstItem="TlY-HI-ss0" firstAttribute="top" secondItem="5uj-Ol-qOQ" secondAttribute="bottom" constant="20" id="xTM-NK-jcj"/>
+                                <constraint firstItem="Dpo-qd-LO3" firstAttribute="centerX" secondItem="eg5-dk-cNd" secondAttribute="centerX" id="zGL-1k-nhD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eg5-dk-cNd" firstAttribute="top" secondItem="a9B-u7-RAQ" secondAttribute="bottom" constant="25" id="Gmt-g4-qF9"/>
+                        <constraint firstAttribute="trailing" secondItem="eg5-dk-cNd" secondAttribute="trailing" constant="8" id="MTv-Kc-nNc"/>
+                        <constraint firstItem="a9B-u7-RAQ" firstAttribute="top" secondItem="MgR-3V-3wh" secondAttribute="top" constant="43" id="VSK-cE-y2i"/>
+                        <constraint firstAttribute="trailing" secondItem="a9B-u7-RAQ" secondAttribute="trailing" id="chz-gM-lHc"/>
+                        <constraint firstItem="a9B-u7-RAQ" firstAttribute="leading" secondItem="MgR-3V-3wh" secondAttribute="leading" id="ehK-ka-vJK"/>
+                        <constraint firstItem="eg5-dk-cNd" firstAttribute="leading" secondItem="MgR-3V-3wh" secondAttribute="leading" constant="8" id="yLo-YJ-AWd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MgR-3V-3wh" firstAttribute="top" secondItem="iaf-3a-Wfc" secondAttribute="bottom" constant="8" symbolic="YES" id="0Uw-04-ecP"/>
+                <constraint firstItem="MgR-3V-3wh" firstAttribute="trailing" secondItem="iaf-3a-Wfc" secondAttribute="trailing" id="6Vg-ad-jeX"/>
+                <constraint firstItem="MgR-3V-3wh" firstAttribute="leading" secondItem="iaf-3a-Wfc" secondAttribute="leading" id="GWu-Ck-pQi"/>
+                <constraint firstItem="iaf-3a-Wfc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SkT-5R-fbw"/>
+                <constraint firstAttribute="bottom" secondItem="MgR-3V-3wh" secondAttribute="bottom" id="TNS-BQ-vFD"/>
+                <constraint firstItem="iaf-3a-Wfc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ddK-5X-iQW"/>
+                <constraint firstAttribute="trailing" secondItem="iaf-3a-Wfc" secondAttribute="trailing" id="j6b-bl-jkk"/>
+            </constraints>
+            <point key="canvasLocation" x="-454" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="payDetail.jpg" width="372" height="216"/>
+    </resources>
+</document>

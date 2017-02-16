@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckOnViewController">
+            <connections>
+                <outlet property="buttonToTop" destination="r0c-Ea-Yyk" id="Zbm-dt-zGv"/>
+                <outlet property="calendarCollectionView" destination="Duj-kE-nEC" id="Pnm-gb-fSi"/>
+                <outlet property="checkMoon" destination="U73-Kb-tCo" id="aEa-kR-Bbq"/>
+                <outlet property="collectHeight" destination="UYR-F5-E46" id="wrM-Hn-N1s"/>
+                <outlet property="dataAnalysis" destination="McL-6l-aht" id="bIZ-UL-KJO"/>
+                <outlet property="historicRecords" destination="NbX-FJ-vpd" id="EXb-ig-iQl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeigh" destination="q2I-FZ-fXG" id="YJJ-Fp-0be"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Duj-kE-nEC">
+                    <rect key="frame" x="30" y="153" width="315" height="257"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="257" id="UYR-F5-E46"/>
+                        <constraint firstAttribute="width" constant="315" id="x3n-3w-fBe"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XK3-IM-Aed">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pe-HU-Pv0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McL-6l-aht">
+                            <rect key="frame" x="274" y="26" width="93" height="93"/>
+                            <color key="backgroundColor" red="1" green="0.5711948939" blue="0.61354589059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="数据分析.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="dataDnalysis:" destination="-1" eventType="touchUpInside" id="9h7-YZ-B3A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U73-Kb-tCo">
+                            <rect key="frame" x="8" y="26" width="93" height="93"/>
+                            <color key="backgroundColor" red="1" green="0.5711948939" blue="0.61354589059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U73-Kb-tCo" secondAttribute="height" multiplier="1:1" id="Jo7-bM-OXp"/>
+                            </constraints>
+                            <state key="normal" image="本月考勤-1.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="checkMoon:" destination="-1" eventType="touchUpInside" id="ru6-3d-leF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-FJ-vpd">
+                            <rect key="frame" x="141" y="26" width="93" height="93"/>
+                            <color key="backgroundColor" red="1" green="0.5711948939" blue="0.61354589059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="历史记录.png"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="historicRecords:" destination="-1" eventType="touchUpInside" id="Nm9-7u-pnz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="McL-6l-aht" secondAttribute="trailing" constant="8" id="8I0-nu-mEE"/>
+                        <constraint firstItem="NbX-FJ-vpd" firstAttribute="leading" secondItem="U73-Kb-tCo" secondAttribute="trailing" constant="40" id="UCJ-JP-gW8"/>
+                        <constraint firstItem="NbX-FJ-vpd" firstAttribute="bottom" secondItem="U73-Kb-tCo" secondAttribute="bottom" id="Uge-0u-eDj"/>
+                        <constraint firstItem="NbX-FJ-vpd" firstAttribute="width" secondItem="U73-Kb-tCo" secondAttribute="width" id="VNi-xa-vA0"/>
+                        <constraint firstItem="McL-6l-aht" firstAttribute="leading" secondItem="NbX-FJ-vpd" secondAttribute="trailing" constant="40" id="XhZ-td-qIX"/>
+                        <constraint firstItem="U73-Kb-tCo" firstAttribute="leading" secondItem="1pe-HU-Pv0" secondAttribute="leading" constant="8" id="ga4-6i-a7S"/>
+                        <constraint firstItem="McL-6l-aht" firstAttribute="width" secondItem="U73-Kb-tCo" secondAttribute="width" id="k7u-zX-ctV"/>
+                        <constraint firstItem="McL-6l-aht" firstAttribute="top" secondItem="U73-Kb-tCo" secondAttribute="top" id="lya-bo-9ll"/>
+                        <constraint firstAttribute="height" constant="140" id="q2I-FZ-fXG"/>
+                        <constraint firstItem="U73-Kb-tCo" firstAttribute="top" secondItem="1pe-HU-Pv0" secondAttribute="top" constant="26" id="r0c-Ea-Yyk"/>
+                        <constraint firstItem="McL-6l-aht" firstAttribute="bottom" secondItem="U73-Kb-tCo" secondAttribute="bottom" id="tAy-Cg-nIc"/>
+                        <constraint firstItem="NbX-FJ-vpd" firstAttribute="top" secondItem="U73-Kb-tCo" secondAttribute="top" id="yVp-5F-YFf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMO-k3-QwQ">
+                    <rect key="frame" x="50" y="432" width="276" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6vF-LQ-cId"/>
+                        <constraint firstAttribute="width" constant="276" id="S7o-Pq-WxH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="请假申请">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="apply:" destination="-1" eventType="touchUpInside" id="mQm-Rr-sy1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90165560233160624" green="0.90165560233160624" blue="0.90165560233160624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JMO-k3-QwQ" firstAttribute="top" secondItem="Duj-kE-nEC" secondAttribute="bottom" constant="22" id="IN5-93-crZ"/>
+                <constraint firstItem="JMO-k3-QwQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="PIV-aV-AEm"/>
+                <constraint firstItem="1pe-HU-Pv0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TGm-HR-sdn"/>
+                <constraint firstItem="1pe-HU-Pv0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aWw-iN-Lta"/>
+                <constraint firstAttribute="trailing" secondItem="1pe-HU-Pv0" secondAttribute="trailing" id="iEX-LF-Wd4"/>
+                <constraint firstAttribute="trailing" secondItem="JMO-k3-QwQ" secondAttribute="trailing" constant="49" id="jM9-9C-KCf"/>
+                <constraint firstItem="Duj-kE-nEC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oYv-Ka-1pQ"/>
+                <constraint firstItem="Duj-kE-nEC" firstAttribute="top" secondItem="1pe-HU-Pv0" secondAttribute="bottom" constant="13" id="zEO-Ed-HbH"/>
+            </constraints>
+            <point key="canvasLocation" x="-284" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="历史记录.png" width="200" height="200"/>
+        <image name="数据分析.png" width="200" height="200"/>
+        <image name="本月考勤-1.png" width="200" height="200"/>
+    </resources>
+</document>

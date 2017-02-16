@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="105" id="KGk-i7-Jjw" customClass="newsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qh-ym-C98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                        <color key="backgroundColor" red="0.65101623500000005" green="0.65082310330000004" blue="0.65819300520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58A-iR-UwH">
+                        <rect key="frame" x="8" y="8" width="252" height="88"/>
+                        <color key="backgroundColor" red="0.58160929920000004" green="0.84528351410000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment content="11111111111111111111111111111111111122222222222222222222222222222222222222222">
+                                <attributes>
+                                    <font key="NSFont" size="20" name=".SFNSText"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Adw-XE-cUd">
+                        <rect key="frame" x="278" y="7" width="89" height="89"/>
+                        <color key="backgroundColor" red="1" green="0.5711948939" blue="0.61354589059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Adw-XE-cUd" secondAttribute="height" multiplier="1:1" id="voB-N8-qh8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2qh-ym-C98" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6WE-x6-gts"/>
+                    <constraint firstItem="2qh-ym-C98" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7S2-2u-BU9"/>
+                    <constraint firstAttribute="bottom" secondItem="Adw-XE-cUd" secondAttribute="bottom" constant="8.5" id="Bdk-hz-oWr"/>
+                    <constraint firstAttribute="trailing" secondItem="Adw-XE-cUd" secondAttribute="trailing" constant="8" id="BmY-l2-k1a"/>
+                    <constraint firstAttribute="bottom" secondItem="58A-iR-UwH" secondAttribute="bottom" constant="8" id="EaM-rx-EU3"/>
+                    <constraint firstItem="Adw-XE-cUd" firstAttribute="leading" secondItem="58A-iR-UwH" secondAttribute="trailing" constant="18" id="F3x-Sh-Yj8"/>
+                    <constraint firstItem="58A-iR-UwH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JHc-G1-GhI"/>
+                    <constraint firstAttribute="trailing" secondItem="2qh-ym-C98" secondAttribute="trailing" id="hdy-BC-0HW"/>
+                    <constraint firstItem="Adw-XE-cUd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="pvO-1v-PjS"/>
+                    <constraint firstItem="Adw-XE-cUd" firstAttribute="top" secondItem="2qh-ym-C98" secondAttribute="bottom" constant="5" id="ukD-iL-rU2"/>
+                    <constraint firstItem="58A-iR-UwH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wfm-nM-4Z4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsImg" destination="Adw-XE-cUd" id="1H0-Zu-sqU"/>
+                <outlet property="newsT" destination="58A-iR-UwH" id="etE-ys-Ke4"/>
+            </connections>
+            <point key="canvasLocation" x="-122.5" y="-22.5"/>
+        </tableViewCell>
+    </objects>
+</document>
